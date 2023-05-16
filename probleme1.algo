@@ -1,0 +1,33 @@
+ algorithm probléme1;
+ var tab1,tab2:array[ 1..5]of integer;
+     n:boolean;
+    a, som1,som2,i,j:integer;l
+  begin
+  	writeln('donner les differente élément ');
+  	readln(tab1[i]);
+  	writeln('donner les differente élément ');
+  	readln(tab2[j]);
+  	n:=true;
+  	som:=0;
+  	for i:=1 to 5 do
+        for j:=1 to 5 do
+            if (tab1[i]==tab2[j]) then
+                n:=false;
+            end if;
+        end for;
+        if (n==true) then
+            som1:=som1+tab1[i]
+            end if;
+         for j:=1 to 5 do
+         for i:=1 to 5 do
+            if (tab2[j]==tab1[i]) then
+                n:=false;
+            end if;
+         end for;
+            if (n==true) then
+            som2:=som2+tab2[j];
+            end if;
+  	writeln('la somme des differente élément');
+end.
+  	
+ 

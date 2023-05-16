@@ -1,0 +1,54 @@
+ algorithm dot_product
+PROCEDURE procedure_dot_product(v1, v2:array_of real,var ps:real)
+VAR
+    i:=integer;
+    ps:=real;
+BEGIN
+    ps:=0;
+    for i:=0  to (v1-1) do
+    ps:=ps v1[i]*v2[i]
+    end for
+END
+PROCEDURE procedure_vecteur_orthogonal(n,p:integer;v1,v2:array_of real;var array_of boolean;)
+VAR
+    j,i:=integer;
+    ps:=real;
+BEGIN
+  writeln('donner un vecteur')
+  readln(n,p)
+    for i:=0  to (n-1) do
+ writeln('donner un element vectoriel v1')
+ readln(v1[n])
+    for j:=0  to (p-1) do
+ writeln('donner un element vectoriel v2')
+ readln(v2[p])
+    end for
+    begin
+    if (n mod 2=0) then
+    if (p mod 2=0) then
+    writeln('le vecteur est orthogonal');
+    ELSE
+        writeln('le vecteur n''est pas orthogonal');
+    END_IF
+    end
+FUNCTION function_vecteur_orthogonal(v1,v2:array_of real;vecteur of real;) : return_type
+VAR
+ n:integer;
+ p:integer;
+ result:integer;
+BEGIN
+    writeln('donner un vecteur')
+  readln(n,p)
+    for i:=0  to (n-1) do
+ result[i]:=(dot_product(vecteur[i].v1),(vecteur[j].v2)=0);
+    for j:=0  to (p-1) do
+ result[j]:=(dot_product(vecteur[i].v1),(vecteur[j].v2)=0);
+    end for
+    begin
+    if (n mod 2=0) then
+    if (p mod 2=0) then
+    writeln('le vecteur est orthogonal');
+    ELSE
+        writeln('le vecteur n''est pas orthogonal');
+    END_IF
+END
